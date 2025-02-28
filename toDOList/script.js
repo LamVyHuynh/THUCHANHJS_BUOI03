@@ -43,6 +43,7 @@ taskList.addEventListener("dbclick", function (event) {
   if (clickedItem.tagName === "LI") {
     clickedItem.classList.toggle("completed");
   }
+
   // Lưu danh sách công việc vào localStorage
   const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
   tasks.push(taskText);
